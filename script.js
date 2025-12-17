@@ -165,7 +165,10 @@ return stored.length ? stored : initial;
     document.addEventListener('keydown', function (e) {if (e.ctrlKey && e.altKey && e.key.toLowerCase() === 'a') {window.location.href='admin.html';}});
 
     // Inicializa
-    render();
+    document.addEventListener('DOMContentLoaded', () => {
+  render();
+});
+
 
 
    
