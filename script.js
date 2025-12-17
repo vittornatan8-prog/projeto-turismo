@@ -1,13 +1,5 @@
 
-    // Dados iniciais (fallback)
-    const initial = [
-      {nome:'Tahiti',duracao:'8 dias / 7 noites',preco:2011,imagem:'https://images.unsplash.com/photo-1504609813442-a8924e83f76e',whatsapp:'Olá! Tenho interesse no pacote Tahiti.'},
-      {nome:'Europa',duracao:'21 dias / 20 noites',preco:3560,imagem:'https://images.unsplash.com/photo-1502602898657-3e91760cbb34',whatsapp:'Olá! Tenho interesse no circuito Europa.'},
-      {nome:'Egito',duracao:'8 dias / 7 noites',preco:749,imagem:'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee',whatsapp:'Olá! Tenho interesse no pacote Egito.'},
-      {nome:'Riviera Maya',duracao:'5 dias / 4 noites',preco:643,imagem:'https://images.unsplash.com/photo-1506929562872-bb421503ef21',whatsapp:'Olá! Tenho interesse na Riviera Maya.'}
-    ];
-
-    
+ 
     // Carrega destinos do localStorage
 function carregarDestinos(){
 const stored = JSON.parse(localStorage.getItem('destinosAdmin')) || [];
