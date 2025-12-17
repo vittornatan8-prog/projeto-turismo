@@ -166,7 +166,7 @@ return stored.length ? stored : initial;
 
     // Inicializa
     document.addEventListener('DOMContentLoaded', () => {
-  render();
+  render(console.log('Página carregada e renderizada'));
 });
 
 
