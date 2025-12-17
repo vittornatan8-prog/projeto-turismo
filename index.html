@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SuaLogo - Agência</title>
+  <meta name="description" content="Pacotes, ofertas e reservas de viagens — TravelClub. Reserve, fale no WhatsApp e gerencie no painel administrativo." />
+  <meta name="keywords" content="viagem, pacotes, reservar, viagens, turismo" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"rel="stylesheet"
+/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="top-bar container">
+      <div class="logo">SuaLogoAqui</div>
+      <nav class="nav-menu" id="navMenu">
+        <a href="#destinos">Destinos</a>
+        <a href="#contato">Contato</a>
+        <a href="#locacoes">Locações de onibus</a>
+        <a href="admin.html" style="display:none">Admin</a>
+      </nav>
+      <div class="actions">
+        <button class="menu-toggle" id="menuToggle"><i class="ri-menu-line"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <div class="hero-content container">
+        <h1>Descubra o mundo com a SuaLogo</h1>
+        <p>Pacotes exclusivos, experiências inesquecíveis e atendimento personalizado.</p>
+        <a class="btn-main" href="#destinos">Quero Viajar</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="container" id="destinos">
+    <div class="layout">
+      <section class="left">
+        <div class="controls">
+          <input id="searchInput" placeholder="Pesquisar destino...">
+          <select id="filterPrice">
+            <option value="">Filtrar por preço</option>
+            <option value="500">Até US$ 500</option>
+            <option value="1000">Até US$ 1000</option>
+            <option value="2000">Até US$ 2000</option>
+          </select>
+          <button class="btn-limpar" id="clearFilters">Limpar</button>
+        </div>
+
+        <div class="grid" id="gridDestinos">
+          <!-- Cards carregados dinamicamente -->
+        </div>
+      </section>
+      </div>
+    
+
+
+
+     <section class="cards-onibus" id="locacoes"> 
+    <h2>Nossos Ônibus</h2>
+
+    <div class="cards-container">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8b25pYnVzfGVufDB8fDB8fHww" alt="Ônibus Executivo">
+            <div class="card-info">
+                <h3>Ônibus Executivo</h3>
+                <p>Ar-condicionado, Wi-Fi, poltronas reclináveis, USB.</p>
+                <span class="capacidade">50 Lugares</span>
+                <a href="#contato" class="btn-card2">Reservar</a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="https://plus.unsplash.com/premium_photo-1661963208071-9a65b048ebaf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTEwfHxtaWNybyUyMG9uaWJ1c3xlbnwwfHwwfHx8MA%3D%3D" alt="Micro-ônibus">
+            <div class="card-info">
+                <h3>Micro-Ônibus</h3>
+                <p>Ideal para pequenos grupos,ar-condicionado e conforto.</p>
+                <span class="capacidade">26 Lugares</span>
+                <a href="#contato" class="btn-card2">Reservar</a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1570125909232-eb263c188f7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8b25pYnVzfGVufDB8fDB8fHww" alt="Ônibus Leito">
+            <div class="card-info">
+                <h3>Ônibus Leito</h3>
+                <p>Conforto premium com poltronas 160º e serviços extras.</p>
+                <span class="capacidade">40 Lugares</span>
+                <a href="#contato" class="btn-card2">Reservar</a>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="https://media.istockphoto.com/id/1297258686/pt/foto/white-delivery-van-driving-on-rural-road-in-monument-valley-arizona-usa.webp?a=1&b=1&s=612x612&w=0&k=20&c=6C-wIeTk_VlfGQ0TJs3bKQbBj1SXkBW3VpupN_Pt6c4=" alt="Van Executiva">
+            <div class="card-info">
+                <h3>Van Executiva</h3>
+                <p>Viagens rápidas, ideal para transfer e aeroportos.</p>
+                <span class="capacidade">15 Lugares</span>
+                <a href="#contato" class="btn-card2">Reservar</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+  </main>
+
+    <footer class="footer">
+    <div class="footer-container">
+
+        <!-- Logo / Sobre -->
+        <div class="footer-col">
+            <h3>Sua Logo</h3>
+            <p>
+                Locação de ônibus para turismo, excursões e eventos.
+                Conforto, segurança e pontualidade em cada viagem.
+            </p>
+        </div>
+
+        <!-- Contato -->
+        <div class="footer-col">
+            <h4>Contato</h4>
+            <ul class="footer-contato" id="contato">
+                <li><i class="ri-phone-line"></i> (11) 99999-9999</li>
+                <li><i class="ri-mail-line"></i> contato@sualogo.com</li>
+                <li><i class="ri-map-pin-line"></i> Curitiba - PR</li>
+            </ul>
+        </div>
+
+        <!-- Redes Sociais -->
+        <div class="footer-col">
+            <h4>Redes Sociais</h4>
+            <div class="footer-redes">
+          <a href="https://www.instagram.com/travelbus/" target="_blank">
+           <i class="ri-instagram-line"></i> Instagram
+          </a>
+
+          <a href="https://www.facebook.com/travelbus" target="_blank">
+           <i class="ri-facebook-fill"></i> Facebook
+          </a>
+
+          <a href="https://wa.me/5511999999999" target="_blank">
+           <i class="ri-whatsapp-line"></i> WhatsApp
+          </a>
+        </div>
+      </div>
+
+        <!-- Mapa -->
+        <div class="footer-col">
+            <h4>Localização</h4>
+            <iframe
+                src="https://www.google.com/maps?q=Sao%20Paulo&output=embed"
+                loading="lazy">
+            </iframe>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 SuaLogo • Todos os direitos reservados
+    </div>
+</footer>
+
+
+
+       
+
+  <!-- MODAL: Detalhes / Reserva / Pagamento -->
+  <div class="modal" id="modalDetalhe">
+    <div class="modal-card">
+      <div class="modal-body" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- MODAL: Pagamento simulado -->
+  <div class="modal" id="modalPg">
+    <div class="modal-card">
+      <div class="modal-body">
+        <span class="close" onclick="fecharPg()">×</span>
+        <h3>Pagamento (Simulado)</h3>
+        <p id="pgInfo"></p>
+        <label>Nome no cartão</label>
+        <input id="cardName">
+        <label>Número</label>
+        <input id="cardNum">
+        <label>Validade</label>
+        <input id="cardExp">
+        <label>CVV</label>
+        <input id="cardCvv">
+        <button class="btn" onclick="simularPagamento()">Pagar</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
